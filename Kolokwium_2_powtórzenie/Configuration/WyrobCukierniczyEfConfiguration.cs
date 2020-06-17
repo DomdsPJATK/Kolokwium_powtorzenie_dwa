@@ -9,8 +9,8 @@ namespace Kolokwium_2_powtórzenie.Configuration
         public void Configure(EntityTypeBuilder<WyrobCukierniczy> builder)
         {
             builder.HasKey(e => e.IdWyrobuCukierniczego);
-            builder.Property(e => e.Nazwa).HasMaxLength(200);
-            builder.Property(e => e.Typ).HasMaxLength(40);
+            builder.Property(e => e.Nazwa).HasMaxLength(200).IsRequired();
+            builder.Property(e => e.Typ).HasMaxLength(40).IsRequired();
         }
     }
 }

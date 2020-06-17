@@ -20,8 +20,8 @@ namespace Kolokwium_2_powtórzenie.Controllers.Model
             modelBuilder.ApplyConfiguration(new KlientEfConfiguration());
             modelBuilder.ApplyConfiguration(new PracownikEfConfiguration());
             modelBuilder.ApplyConfiguration(new WyrobCukierniczyEfConfiguration());
-            modelBuilder.ApplyConfiguration(new ZamowienieEfConfiguration);
-            modelBuilder.ApplyConfiguration(new ZamowienieWyrobEfConfiguration);
+            modelBuilder.ApplyConfiguration(new ZamowienieEfConfiguration());
+            modelBuilder.ApplyConfiguration(new ZamowienieWyrobEfConfiguration());
         }
     }
 }

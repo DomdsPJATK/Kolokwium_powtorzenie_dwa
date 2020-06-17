@@ -10,8 +10,8 @@ namespace Kolokwium_2_powtórzenie.Configuration
         public void Configure(EntityTypeBuilder<Pracownik> builder)
         {
             builder.HasKey(e => e.IdPracownik);
-            builder.Property(e => e.Imie).HasMaxLength(50);
-            builder.Property(e => e.Nazwisko).HasMaxLength(60);
+            builder.Property(e => e.Imie).HasMaxLength(50).IsRequired();
+            builder.Property(e => e.Nazwisko).HasMaxLength(60).IsRequired();
         }
     }
 }
